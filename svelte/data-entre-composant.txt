@@ -1,0 +1,46 @@
+//////////////////// DATA ENTRE COMPOSANT ////////////////////
+
+Pour envoyer des data depuis un composant parent vers un composant enfant :
+
+Dans mon composant parent je déclare mon composant enfant :
+
+<script>
+	import ComposantEnfant from './ComposantEnfant.svelte';
+</script>
+
+	<ComposantEnfant mavar="mavar"></ComposantEnfant>
+
+Puis dans mon composant enfant j'exporte ma data ici "mavar"
+
+<script>
+	export let mavar;
+</script>
+
+<p> {mavar} </p>
+
+//////////////////// 
+
+Pour transmettre des informations d'un composant enfant vers son parent :
+
+Dans le composant enfant on importe la méthode :
+
+<script>
+	import { createEventDispatcher } from 'svelte';
+	const dispatch = createEventDispatcher();
+
+	dispatch("dataForParent", "détails de ma data");
+</script>
+
+Et enfin dans le composant parent :
+
+<script>
+	function showData(event){
+		dataInput=event.detail;
+	}
+</script>
+
+	<ComposantEnfant mavar="mavar" on:dataForParent={showData}></ComposantEnfant>
+
+<p>Les data du composant enfant : "{dataInput}"</p>
+
+

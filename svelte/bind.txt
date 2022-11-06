@@ -1,0 +1,25 @@
+///////////////////////// BIND ///////////////////////// 
+
+Fonctionne avec des balises "input".
+
+Le bind fonctionne dans les 2 sens, pour injecter une valeur récupéré depuis un input dans une variable, mais aussi pour injecter la valeur d'une variable dans un élément html.
+
+Pour envoyer la valeur d'une variable à un élément :
+
+- let nom = "Stef"
+
+- <input type="text" bind:value={textP}>
+
+Affichera dans mon "input", la valeur par défaut "Stef".
+
+/////////////////////////
+
+Mais je peux aussi récupérer la valeur en instantané pour l'afficher en instantané dans un élément :
+
+- let textP = ""
+    
+- <input type="text" bind:value={textP}>
+    
+- <p>{textP}</p>
+
+Ainsi tout ce que j'écris dans mon input sera instantanément injecté dans ma balise <p>.

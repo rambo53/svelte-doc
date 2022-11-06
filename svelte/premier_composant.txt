@@ -1,0 +1,25 @@
+///////////////////////// PREMIER COMPOSANT /////////////////////////
+
+L'architecture pour les composants est fait de composant parents et enfants.
+
+Un composant est composé de 3 éléments : 
+
+- une balise script qui contiendra les export, import et la logique
+- une ou plusieurs balises html
+- une balise style pour mon css  
+
+///////////////////////// 
+
+Pour injecter un composant enfants dans "App.svelte", dans ma balise script je déclare son import, je le nomme et je donne son path, ex :
+
+<script>
+	import First from './First.svelte';
+</script>
+
+Puis je le déclare dans mon html comme une balise html, ex :
+
+	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+
+	<First></First>
+
+	<footer class="fixed-bottom">footer pour svelte</footer>

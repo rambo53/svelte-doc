@@ -1,0 +1,16 @@
+/////////////////////////// BOUCLES ///////////////////////////
+
+Pour une boucle for each :
+
+let messages = [
+	author : "moi",
+	text : "oulala!"
+]
+
+- {#each messages as message}
+
+- <p>{message.text}</p>
+
+- {/each}
+
+Le # signale le début de mon instruction et le / sa fin.

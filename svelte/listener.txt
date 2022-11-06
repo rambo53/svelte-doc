@@ -1,0 +1,19 @@
+//////////////////////// LISTENER ////////////////////////
+
+Pour placer des listener liés à des méthodes en svelte :
+
+- let textP = "" 
+
+	function goodOrNot(){
+        	if(textP.length > 4){
+            	good = "C'est good!"
+        	}
+    	}
+
+- <input type="text" bind:value={textP} on:input={goodOrNot}>
+
+Ici je met un listener input qui à chaque changement de valeur sur ma balise "input" effectuera la fonction "{goodOrNot}".
+
+Bien sûr je peux mettre un on click :
+
+- <button on:click={goodOrNot}>Click</button>

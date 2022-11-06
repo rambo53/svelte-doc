@@ -1,0 +1,7 @@
+////////////////////////////////// ARCHITECTURE //////////////////////////////////
+
+Dans mon dossier public je retrouver mon fichier "index.html" qui me servira à injecter mes différents composants.
+
+Puis dans le dossier src j'aurai le fichier js globale "main.js" qui gère mon app.
+
+Et juste au dessus j'aurais mes composant en fichier avec une extension ".svelte", ici au démarrage j'ai un "App.svelte".

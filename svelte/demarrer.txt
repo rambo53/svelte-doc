@@ -1,0 +1,36 @@
+//////////////////////////////// DEMARRER ////////////////////////////////
+
+Installer "node" sur sa machine.
+
+Puis dans mon terminal dans le dossier dans lequel je veux créer mon app je rentre la commande :
+
+- npx degit sveltejs/template le-nom-de-mon-app
+
+Ouvrir mon dossier avec mùon editeur de code.
+
+////////////////////////////////
+
+Puis je me place dans le dossier de mon app :
+
+- cd le-nom-de-mon-app
+
+Avant de pouvoir lancer notre application, la commande :
+
+- npm install
+
+Puis on peut la lancer avec la commande :
+
+- npm run dev
+
+Elle tournera sur le localhost :
+
+- http://localhost:8080
+
+////////////////////////////////
+
+
+
+
+
+
+
