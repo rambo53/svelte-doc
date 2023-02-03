@@ -1,0 +1,15 @@
+//////////////////////// CHANGE VALUE VAR INSTANTLY ////////////////////////
+
+Pour modifier une valeur de variable instantannément dans mon code et mon affichage. 
+
+Pour déclarer une variable "static" on utilise "let" ou "const", ici pour une variable reactive (ex: nb de caractère tapés par mon user) on utilise "$:".
+
+let message = ""
+
+$: nbChar = message.length
+
+On pose en quelque sorte un listener sur la variable, qui sera réinitialisé à chaque changement.
+
+Je peux l'utiliser directement dans d'autres variables, exemple :
+
+$: disabled = nbChar < 3 ? true : false;

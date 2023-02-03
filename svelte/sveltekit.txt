@@ -1,0 +1,37 @@
+////////////////////// SVELTEKIT //////////////////////
+
+Permet d'ajouter un système de routing à une application svelte qui par défaut est "single page application".
+
+Pour démarrer un projet sveltekit :
+
+- npm create svelte@latest my-app
+
+- cd my-app
+
+- npm install
+
+- npm run dev
+
+//////////////////////
+
+Une fois mon application monté, dans src/routes, je rajoute un fichier "+layout.svelte" qui se chargera de gérer le routing entre mes pages.
+
+L'élement "<slot />" se charge de rendre le contenu HTML de la page sélectionnée.
+
+Pour créer mes différentes pages je crée un dossier pour chaque sections, puis j'y ajoute un fichier "+page.svelte" qui contiendra le code html ou les composants nécessaires.
+
+//////////////////////
+
+Pour installer bootstrap :
+
+- mettre le cdn link et script dans le "app.html"
+
+Pour installer sweet alert :
+
+- npm install sweetalert2
+
+Dans le fichier svelte où je veux l'utiliser :
+
+- import Swal from "sweetalert2";
+
+Et ensuite je déclare mes Swal.

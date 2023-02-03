@@ -1,0 +1,17 @@
+/////////////////////// CONDITIONS CSS /////////////////////// 
+
+Pour appliquer une classe CSS de manière conditionnelle, par exemple changer de couleur une police en cas d'erreur :
+
+const tailleMax = 10
+
+$: tailleMessage = message.length
+
+Dans mon CSS :
+
+.alert{
+color:red;
+}
+
+Dans mon HTML :
+
+<p class:alert={tailleMessage >= tailleMax}> attention </p>

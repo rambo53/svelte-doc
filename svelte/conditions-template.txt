@@ -1,0 +1,19 @@
+////////////////////// CONDITIONS TEMPLATE ////////////////////// 
+
+Pour afficher un message ou non dans mon code HTML :
+
+let erreur = true;
+
+{#if erreur}
+
+<span> ERROR </span>
+
+{/if}
+
+////////////////////// 
+
+Pour modifier le texte affiché en direct et en passant par un ternaire :
+
+let isTrue = true;
+
+<button>{isTrue ? "oui":"non"}</button>
